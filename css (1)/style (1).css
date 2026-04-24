@@ -1,0 +1,88 @@
+body { 
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+}
+
+.color-radio {
+    display: none;
+}
+
+.image-card {
+    width: 450px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    transition: background-image 0.3s ease;
+    max-width: 100%;
+}
+
+#radio-rojo:checked ~ .image-card {
+    background-image: url('../img/mercedes2.avif');
+}
+
+#radio-gris:checked ~ .image-card {
+    background-image: url('../img/mercedes.png');
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+input {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.colors {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.color-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+#radio-rojo:checked ~ .colors [for="radio-rojo"],
+#radio-gris:checked ~ .colors [for="radio-gris"] {
+    border-color: #007bff;
+    background-color: #222;
+}
+
+.color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.red { background-color: red; }
+.gray { background-color: gray; }
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}

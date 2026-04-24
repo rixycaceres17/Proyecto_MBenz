@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css (1)/style (1).css">
+    <title>Mi Web</title>
+</head>
+<body>
+
+    <h1>Hola Mundo</h1>
+
+    <form action="procesar.php" method="POST">
+        <br><label>Nombre:</label><br>
+        <br><input type="text" name="nombre" required> <br>
+
+        <br><label>Edad:</label><br>
+        <br><input type="number" name="edad" required><br>
+
+        <br><button type="submit">Enviar al Servidor</button>
+    </form>
+
+    <div class="product-card">
+        <input type="radio" name="color-selector" id="radio-rojo" class="color-radio">
+        <input type="radio" name="color-selector" id="radio-gris" class="color-radio" checked>
+
+        <div class="image-card"></div>
+        
+        <h2>Mercedes Benz C300</h2>
+
+        <div class="colors">
+            <label for="radio-rojo" class="color-option">
+                <span class="color red"></span>
+                <span>Rojo</span>
+            </label>
+
+            <label for="radio-gris" class="color-option">
+                <span class="color gray"></span>
+                <span>Gris</span>
+            </label>
+        </div>
+
+        <br><button id="cartButton">Agregar al carrito</button>
+    </div>
+
+</body>
+</html>
